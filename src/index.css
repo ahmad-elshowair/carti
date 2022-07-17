@@ -1,6 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Edu SA Beginner', cursive;
+}
+
+.nav {
+  width: 100%;
+  height: 70px;
+  background: #c5bbac;
+  line-height: 70px;
+}
+
+.container {
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 30px;
+  color: rgb(228, 237, 245);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.logo-letter {
+  color: #a9ff00;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  justify-self: end;
+}
+
+.nav-item {
+  position: relative;
+  transition: all ease-in-out .5s;
+}
+
+.nav-item::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  background: #a9ff00;
+  left: 0;
+  transform: translateY(-1px);
+  opacity: 0;
+  transition: all ease-in-out .5s
+}
+
+.nav-item:hover::after {
+  opacity: 1;
+  transform: translateY(-18px);
+}
+
+.nav-item:hover .nav-link {
+  color: #a9ff00;
+}
+
+.nav-item:last-child {
+  margin-left: 30px;
+}
+
+.nav-link {
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 18px;
+  color: #4a3e2b;
+  transition: all ease-out .5s;
 }
