@@ -1,13 +1,6 @@
 import React from 'react';
 const Product = ({product, cart, setCart}) => {
 
-  const addToCart = ()=>{
-    setCart([...cart, product]);
-  }
-
-  const removeFromCart = (productId) =>{
-    setCart(cart.filter(product=> product.id !== productId))
-  };
   return (
     <article className='product'>
       <div className="product-image">
@@ -21,14 +14,14 @@ const Product = ({product, cart, setCart}) => {
           cart.includes(product) ?(
             <button 
               className='btn remove-cart'
-              onClick={()=>removeFromCart(product.id)}
+              onClick={()=>setCart(cart.filter(c=> c.id !== product.id))}
             >
               Remove
             </button>
           ):(
             <button 
               className='btn add-cart'
-              onClick={() => addToCart()}
+              onClick={() =>setCart([...cart, product])}
             >
               Add
             </button>
