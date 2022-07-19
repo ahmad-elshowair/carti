@@ -19,7 +19,6 @@ const Home = () => {
   }, [])
   
     const [cart, setCart] = useState([]);
-    
     const allProducts = products.map((product) => {
       return(
         <Product 

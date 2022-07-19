@@ -1,5 +1,4 @@
-import React from 'react'
-import {TbShoppingCartPlus, TbShoppingCartX} from 'react-icons/tb'
+import React from 'react';
 const Product = ({product, cart, setCart}) => {
 
   const addToCart = ()=>{
@@ -15,29 +14,28 @@ const Product = ({product, cart, setCart}) => {
         <img className='image'src={`${product.image}`} alt={`${product.name}`}/>
       </div>
       <div className="product-info">
-        <p className='product-name'>{product.name}</p>
+        <span className='product-name'>{product.name}</span>
         <span className='product-price'>{product.price}</span>
-        {
+      </div>
+      {
           cart.includes(product) ?(
             <button 
               className='btn remove-cart'
               onClick={()=>removeFromCart(product.id)}
             >
-              <TbShoppingCartX/>
+              Remove
             </button>
           ):(
             <button 
               className='btn add-cart'
               onClick={() => addToCart()}
             >
-              <TbShoppingCartPlus/>
+              Add
             </button>
 
             
           ) 
         }
-        
-      </div>
     </article>
   )
 }
