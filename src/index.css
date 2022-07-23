@@ -283,6 +283,31 @@
   font-size: 20px;
 }
 
-
-
 /* ================= END STYLE CART COMPONENT  ================= */
+
+/* +++++++++++++++++ START MEDIA QUERIES STYLE +++++++++++++++++ */
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 677px) {
+  .products-box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 677.98px) and (max-width: 767.98px) {
+  .products-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .products-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* +++++++++++++++++ END MEDIA QUERIES STYLE +++++++++++++++++ */
