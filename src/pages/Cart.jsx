@@ -3,7 +3,7 @@ import { CartContext } from '../Context';
 
 const Cart = () => {
   const {cart, setCart} = useContext(CartContext)
-  
+
   const [totalPrice, setTotalPrice] = useState();
   useEffect(() => {
     setTotalPrice(cart.reduce((prevValue, CurrValue)=> prevValue + Number(CurrValue.price), 0))
@@ -52,7 +52,7 @@ const Cart = () => {
               </h3>
               <div className="cart-info-total">
                 <span className='cart-info_total-products'>products: {cart.length}</span>
-                <span className='cart-info_total-price'>price: {totalPrice}</span>
+                <span className='cart-info_total-price'>price: {Math.round(totalPrice)}</span>
               </div>
             </div>
           </div>

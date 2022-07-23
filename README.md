@@ -1,4 +1,15 @@
-# Context API App
+# Carti
+
+
+## *carti react app*
+
+_cart app that fetch a limit number of products, the app has two main functions are add to cart and remove from the cart_
+
+_used `createContext` to manage the state of cart through the pages_
+_used `react-route-dom` for moving from home page to cart page_
+
+[Live Dome](https://ahmad-elshowair.github.io/home)
+
 
 ## Available Scripts
 

@@ -6,15 +6,15 @@ import { CartContext } from '../Context'
 const Navbar = () => {
 
   const {cart} = useContext(CartContext);
-  
+
   return (
     <nav className='nav'>
       <div className='container'>
         <div className="navbar">
-          <Link to='/' className='logo'><span className='logo-letter'>B</span>rand</Link>
+          <Link to='/home' className='logo'><span className='logo-letter'>B</span>rand</Link>
           <ul className='nav-list'>
             <li className='nav-item'>
-              <Link to='/' className='nav-link'><TiHome/></Link>
+              <Link to='/home' className='nav-link'><TiHome/></Link>
             </li>
             <li className='nav-item'>
               <Link to='cart' className='nav-link'>
