@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/carti/static/css/main.25adf39d.css",
+    "main.js": "/carti/static/js/main.b725453f.js",
+    "index.html": "/carti/index.html",
+    "main.25adf39d.css.map": "/carti/static/css/main.25adf39d.css.map",
+    "main.b725453f.js.map": "/carti/static/js/main.b725453f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.25adf39d.css",
+    "static/js/main.b725453f.js"
+  ]
+}
