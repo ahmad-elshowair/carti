@@ -1,10 +1,12 @@
 import React ,{ useEffect, useState } from 'react'
 import Product from '../components/Product';
 import { nanoid } from 'nanoid';
-const Home = ({cart, setCart, addToCart, removeFromCart}) => {
+
+
+const Home = () => {
 
   const [products,setProducts] = useState([]);
-  const productsNumber= 30;
+  const productsNumber= 20;
   useEffect(() => {
     fetch(`https://fakestoreapi.com/products?limit=${productsNumber}`)
     .then(response => response.json())
@@ -24,10 +26,6 @@ const Home = ({cart, setCart, addToCart, removeFromCart}) => {
         <Product 
           key={product.id} 
           product={product}
-          cart={cart}
-          setCart={setCart}
-          addToCart={addToCart}
-          removeFromCart={removeFromCart}
         />
       )
     }) 
