@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/home/static/css/main.25adf39d.css",
-    "main.js": "/home/static/js/main.ddbe46b5.js",
-    "index.html": "/home/index.html",
-    "main.25adf39d.css.map": "/home/static/css/main.25adf39d.css.map",
-    "main.ddbe46b5.js.map": "/home/static/js/main.ddbe46b5.js.map"
+    "main.css": "/carti/static/css/main.25adf39d.css",
+    "main.js": "/carti/static/js/main.ddbe46b5.js",
+    "index.html": "/carti/index.html",
+    "main.25adf39d.css.map": "/carti/static/css/main.25adf39d.css.map",
+    "main.ddbe46b5.js.map": "/carti/static/js/main.ddbe46b5.js.map"
   },
   "entrypoints": [
     "static/css/main.25adf39d.css",
