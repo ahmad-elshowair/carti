@@ -255,7 +255,7 @@
 }
 
 .btn-remove:hover {
-  transform: scale(1.1);
+  transform: scale(.9);
   box-shadow: 1px 1px 10px #6a4040;
 }
 
