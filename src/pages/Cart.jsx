@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 const Cart = ({cart, setCart}) => {
 
+  const [totalPrice, setTotalPrice] = useState();
+  useEffect(() => {
+    setTotalPrice(cart.reduce((prevValue, CurrValue)=> prevValue + Number(CurrValue.price), 0))
+  }, [cart])
+  
   const allProducts= cart.map((product) =>{
     return(
       <article key={product.id} className='cart-products_product'>
@@ -45,7 +50,7 @@ const Cart = ({cart, setCart}) => {
               </h3>
               <div className="cart-info-total">
                 <span className='cart-info_total-products'>products: {cart.length}</span>
-                <span className='cart-info_total-price'>price: </span>
+                <span className='cart-info_total-price'>price: {totalPrice}</span>
               </div>
             </div>
           </div>
