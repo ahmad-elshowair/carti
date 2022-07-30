@@ -8,8 +8,8 @@ function App() {
     <BrowserRouter>
       <Navbar/>
       <Routes>
-        <Route path='/home' index element={<Home/>}/>
-        <Route path='/cart' element={<Cart/>}/>
+        <Route path='/carti' exact element={<Home/>}/>
+        <Route path='/cart-page' exact element={<Cart/>}/>
       </Routes>
     </BrowserRouter>
   );
